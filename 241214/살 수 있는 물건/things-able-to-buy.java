@@ -9,7 +9,7 @@ public class Main {
         if (money >= 3000) {
             System.out.print("book");
         }
-        else if (money > 1000) {
+        else if (money < 1000) {
             System.out.print("no");
         }
         else {
