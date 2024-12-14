@@ -9,11 +9,14 @@ public class Main {
         if (money >= 3000) {
             System.out.print("book");
         }
-        else if (money < 501) {
+        else if (money > 501) {
             System.out.print("pen");
         }
-        else {
+        else if (money > 1001) {
             System.out.print("mask");
+        }
+        else {
+            System.out.print("no");
         }
     }
 }
