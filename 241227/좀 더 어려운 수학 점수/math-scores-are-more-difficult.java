@@ -10,7 +10,7 @@ public class Main {
         int d = sc.nextInt();
 
 
-        if (a > c ||(a == b && b > d)) {
+        if (a > c ||(a == c && b > d)) {
             System.out.print("A");
         }
         else {
