@@ -7,7 +7,7 @@ public class Main {
         int a = sc.nextInt();
 
         if (a < 6 && a > 2) {
-            System.out.print("Sprint");
+            System.out.print("Spring");
         }
         else if (a < 9 && a > 5){
             System.out.print("Summer");
