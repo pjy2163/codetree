@@ -9,7 +9,7 @@ public class Main {
         if (a < 6 && a > 2) {
             System.out.print("Sprint");
         }
-        else if (a < 9 && a > 7){
+        else if (a < 9 && a > 5){
             System.out.print("Summer");
         }
         else if (a < 12 && a > 8){
