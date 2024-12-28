@@ -20,6 +20,9 @@ public class Main {
                     System.out.print("N");
                 }
             }
+            else {
+                System.out.print("N");
+            }
         }
         else if (b >= 37) {
             if (flu_b.equals("Y") && (flu_a.equals("Y") || flu_c.equals("Y"))){
@@ -29,7 +32,9 @@ public class Main {
                 else {
                     System.out.print("N");
                 }
-           
+            }
+            else {
+                    System.out.print("N");
             }
         }
         else if (c >= 37) {
@@ -40,7 +45,13 @@ public class Main {
                 else {
                     System.out.print("N");
                 }
-             }  
+            }
+            else {
+                System.out.print("N");
+            }  
+        }
+        else {
+            System.out.print("N");
         }
     }
 }
