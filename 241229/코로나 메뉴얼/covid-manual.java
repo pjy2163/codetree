@@ -13,11 +13,11 @@ public class Main {
 
         if (a >= 37) {
             if(flu_a.equals("Y")){
-                if(flu_b.equals("Y") || flu_c.equals("Y")) {
-                    System.out.print("E");
+                if(b < 37 && c < 37) {
+                    System.out.print("N");
                 }
                 else {
-                    System.out.print("N");
+                    System.out.print("E");
                 }
             }
             else {
