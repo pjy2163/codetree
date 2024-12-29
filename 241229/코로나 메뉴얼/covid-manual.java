@@ -12,8 +12,26 @@ public class Main {
         int c = sc.nextInt();
 
         if (a >= 37) {
-            if (flu_a.equals("Y") && (flu_b.equals("Y") || flu_c.equals("Y"))){
-                if ( b>=37 || c>=37) {
+            if(flu_a.equals("Y")){
+                if(flu_b.equals("Y") || flu_c.equals("Y")) {
+                    System.out.print("E");
+                }
+                else {
+                    System.out.print("N");
+                }
+            }
+            else {
+                if(flu_b.equals("Y") && flu_c.equals("Y")) {
+                    System.out.print("E");
+                }
+                else {
+                    System.out.print("N");
+                }
+            }
+        }
+        else if(a < 37) {
+            if(flu_b.equals("Y") && flu_c.equals("Y")) {
+                if ( b >=37 && c >= 37) {
                     System.out.print("E");
                 }
                 else {
@@ -23,35 +41,7 @@ public class Main {
             else {
                 System.out.print("N");
             }
-        }
-        else if (b >= 37) {
-            if (flu_b.equals("Y") && (flu_a.equals("Y") || flu_c.equals("Y"))){
-                if ( a>=37 || c>=37) {
-                    System.out.print("E");
-                }
-                else {
-                    System.out.print("N");
-                }
-            }
-            else {
-                    System.out.print("N");
-            }
-        }
-        else if (c >= 37) {
-            if (flu_c.equals("Y") && (flu_b.equals("Y") || flu_a.equals("Y"))){
-                if ( b>=37 || a>=37) {
-                    System.out.print("E");
-                }
-                else {
-                    System.out.print("N");
-                }
-            }
-            else {
-                System.out.print("N");
-            }  
-        }
-        else {
-            System.out.print("N");
+
         }
     }
 }
