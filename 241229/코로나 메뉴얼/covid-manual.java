@@ -16,6 +16,9 @@ public class Main {
                 if(b < 37 && c < 37) {
                     System.out.print("N");
                 }
+                else if (flu_b.equals("N") && flu_c.equals("N")) {
+                    System.out.print("N");
+                }
                 else {
                     System.out.print("E");
                 }
