@@ -30,16 +30,5 @@ public class Main {
                 System.out.print(c);
             }
         }
-        else if (c < a){
-            if ( c > b) {
-                System.out.print(c);
-            }
-            else if ( a < b) {
-                System.out.print(a);
-            }
-            else {
-                System.out.print(b);
-            }
-        }
     }
 }
