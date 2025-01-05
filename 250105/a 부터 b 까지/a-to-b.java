@@ -12,6 +12,7 @@ public class Main {
             if (a % 2 != 0) {
                 a *= 2;
                 i = a;
+                System.out.print(a + " ");
             }
             else {
                 a += 3;
