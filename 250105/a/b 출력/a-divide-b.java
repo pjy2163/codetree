@@ -6,6 +6,7 @@ public class Main {
 
         int a = sc.nextInt();
         int b = sc.nextInt();
+        System.out.print("0.");
 
         for (int i = 0; i <20; i++) {
 
