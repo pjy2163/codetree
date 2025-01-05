@@ -7,16 +7,13 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        for(int i = a; i <= b; i++) {
+        while(a <= b) {
             System.out.print(a + " ");
             if (a % 2 != 0) {
                 a *= 2;
-                i = a;
-                System.out.print(a + " ");
             }
             else {
                 a += 3;
-                i = a;
             }
         }
     }
