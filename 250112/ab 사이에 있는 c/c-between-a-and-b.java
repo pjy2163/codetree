@@ -17,7 +17,7 @@ public class Main {
             System.out.println("YES");
         }
         else {
-            System.out.println("No");
+            System.out.println("NO");
         }
     }
 }
