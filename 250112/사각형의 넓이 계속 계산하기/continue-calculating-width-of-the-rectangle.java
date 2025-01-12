@@ -14,9 +14,6 @@ public class Main {
             if(c.equals("C")) {
                 break;
             }
-            else {
-                continue;
-            }
         }
     }
 }
