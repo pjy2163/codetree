@@ -11,6 +11,7 @@ public class Main {
         for (int i = a; i <= b; i++) {
             if (96 % a == 0) {
                 satisfied = true;
+                break;
             }
         }
         if (satisfied == true) {
