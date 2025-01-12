@@ -6,15 +6,16 @@ public class Main {
         
         int a = sc.nextInt();
         int b = sc.nextInt();
+        int cnt = 0;
 
-        boolean satisfied = false;
         for (int i = a; i <= b; i++) {
-            if (96 % i == 0) {
-                satisfied = true;
+           
+            if (1920 % i == 0 || 2880 % i == 0 ) {
+                cnt++;
                 break;
             }
         }
-        if (satisfied == true) {
+        if (cnt >= 1) {
             System.out.println(1);
         }
         else {
