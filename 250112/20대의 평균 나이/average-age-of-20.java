@@ -9,6 +9,7 @@ public class Main {
 
         while (true){
             int n = sc.nextInt();
+            double avg = sum/cnt; 
 
             if(n > 29) {
                 break;
@@ -16,6 +17,6 @@ public class Main {
             cnt++;
             sum +=n;
         }
-        System.out.printf("%.2f\n",(double)sum/cnt);
+        System.out.printf("%.2f\n",avg);
     }
 }
