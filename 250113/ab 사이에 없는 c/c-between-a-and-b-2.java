@@ -6,18 +6,19 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
+        int cnt = 0;
 
         boolean satisfied = true;
         for (int i = a; i <= b; i++) {
-            if (i % c != 0) {
+            if (i % c == 0) {
                 satisfied = false;
             }
         }
         if (satisfied == true) {
-            System.out.println("NO");
+            System.out.println("YES");
         }
         else {
-            System.out.println("YES");
+            System.out.println("NO");
         }
     }
 }
