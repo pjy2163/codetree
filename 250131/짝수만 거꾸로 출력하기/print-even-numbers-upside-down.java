@@ -4,8 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int[] arr = new int[10];
-        int[] arr_even = new int[10];
+        int[] arr = new int[100];
         int n = sc.nextInt();
         int cnt = 0;
     
