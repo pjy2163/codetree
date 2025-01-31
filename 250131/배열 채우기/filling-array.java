@@ -16,8 +16,15 @@ public class Main {
                 break;
             }
         }
-        for (int i = cnt-2; i >= 0; i--) {
+        if (cnt == 10) {
+            for (int i = cnt-1; i >= 0; i--) {
             System.out.print(arr[i] + " ");
+            }
+        }
+        else {
+            for (int i = cnt-2; i >= 0; i--) {
+                System.out.print(arr[i] + " ");
+            }
         }
     }
 }
