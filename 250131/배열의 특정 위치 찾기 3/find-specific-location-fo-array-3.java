@@ -17,7 +17,7 @@ public class Main {
             cnt++;
            
         }
-        for (int i = cnt; i >= 0; i--){
+        for (int i = cnt; i >= cnt-3; i--){
             sum += arr[i];
         }
         System.out.print(sum);
