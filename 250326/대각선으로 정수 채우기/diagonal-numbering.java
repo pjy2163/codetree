@@ -15,6 +15,7 @@ public class Main {
                 arr2d[i][j] = num++;
                 i++;
                 j--;
+            }
             
         }
 
