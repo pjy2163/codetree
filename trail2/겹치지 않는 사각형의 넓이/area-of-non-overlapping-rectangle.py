@@ -1,23 +1,25 @@
-x1 = [0] * 3
-y1 = [0] * 3
-x2 = [0] * 3
-y2 = [0] * 3
+OFFSET = 1000
+MAX_R = 2000
 
-x1[0], y1[0], x2[0], y2[0] = map(int, input().split())
-x1[1], y1[1], x2[1], y2[1] = map(int, input().split())
-x1[2], y1[2], x2[2], y2[2] = map(int, input().split())
+check = [[0] * (MAX_R + 1) for _ in range(MAX_R + 1)]
 
-a = (x2[0] - x1[0]) * (y2[0] - y1[0])
-b = (x2[1] - x1[1]) * (y2[1] - y1[1])
+rects = [tuple(map(int, input().split())) for _ in range(3)]
 
-a_width = max(0, min(x2[0], x2[2]) - max(x1[0], x1[2]))
-a_height = max(0, min(y2[0], y2[2]) - max(y1[0], y1[2]))
+for idx, (x1, y1, x2, y2) in enumerate(rects):
+    x1 += OFFSET
+    y1 += OFFSET
+    x2 += OFFSET
+    y2 += OFFSET
 
-a_double = a_width * a_height
+    value = 1 if idx < 2 else 0
 
-b_width = max(0, min(x2[1], x2[2]) - max(x1[1], x1[2]))
-b_height = max(0, min(y2[1], y2[2]) - max(y1[1], y1[2]))
+    for x in range(x1, x2):
+        for y in range(y1, y2):
+            check[x][y] = value
+            
+answer = 0
 
-b_double = b_width * b_height
+for row in check:
+    answer += sum(row)
 
-print((a- a_double) + (b - b_double))
+print(answer)
